@@ -4,7 +4,7 @@ var END = 0;
 var WIN = 2;
 var gameState = PLAY;
 
-var kangaroo, kangaroo_running , kangaroo_collided;
+var trex, trex_running, trex_collided;
 var jungle, invisiblejungle;
 
 var obstaclesGroup, obstacle1;
@@ -92,7 +92,7 @@ function draw() {
     obstaclesGroup.setVelocityXEach(0);
     shrubsGroup.setVelocityXEach(0);
 
-    //change the kangaroo animation
+    //change the trex animation
     kangaroo.changeAnimation("collided",kangaroo_collided);
     
     //set lifetime of the game objects so that they are never destroyed
